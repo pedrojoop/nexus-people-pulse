@@ -1,5 +1,6 @@
 import { Bell, Plus, Search, User, Settings, LogOut } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { useNavigate } from "react-router-dom";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -9,6 +10,8 @@ import {
 } from "@/components/ui/dropdown-menu";
 
 export const PlatformHeader = () => {
+  const navigate = useNavigate();
+  
   return (
     <header className="sticky top-0 z-50 w-full border-b border-secondary/10 bg-gradient-card backdrop-blur-xl">
       <div className="flex h-16 items-center justify-between px-8 max-w-[1600px] mx-auto">
@@ -57,9 +60,12 @@ export const PlatformHeader = () => {
                 <p className="text-xs text-dark-fg/60">voce@empresa.com</p>
               </div>
               <DropdownMenuSeparator className="bg-secondary/10" />
-              <DropdownMenuItem className="text-dark-fg hover:bg-secondary/10 cursor-pointer">
+              <DropdownMenuItem 
+                className="text-dark-fg hover:bg-secondary/10 cursor-pointer"
+                onClick={() => navigate('/dashboard')}
+              >
                 <User className="w-4 h-4 mr-2" />
-                Perfil
+                Meu Dashboard
               </DropdownMenuItem>
               <DropdownMenuItem className="text-dark-fg hover:bg-secondary/10 cursor-pointer">
                 <Settings className="w-4 h-4 mr-2" />

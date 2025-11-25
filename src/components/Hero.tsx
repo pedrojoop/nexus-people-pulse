@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
+import { Link } from "react-router-dom";
 import heroDashboard from "@/assets/hero-dashboard.png";
 
 export const Hero = () => {
@@ -35,9 +36,12 @@ export const Hero = () => {
             <Button 
               size="lg" 
               className="bg-secondary text-primary hover:bg-secondary/90 hover:shadow-glow-primary transition-all duration-300 text-lg px-8 py-6 group font-semibold"
+              asChild
             >
-              Começar Diagnóstico Gratuito
-              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              <Link to="/platform">
+                Começar Diagnóstico Gratuito
+                <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+              </Link>
             </Button>
             
             <Button 

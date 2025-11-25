@@ -62,19 +62,21 @@ export const NavBar = () => {
               >
                 Serviços
               </Link>
-              <button
-                onClick={() => scrollToSection("pricing")}
-                className="text-sm font-medium text-secondary/70 hover:text-secondary transition-all"
-              >
-                Preços
-              </button>
               <Link
-                to="/platform"
+                to="/sobre"
                 className={`text-sm font-medium transition-all hover:text-secondary ${
-                  isActive("/platform") ? "text-secondary font-semibold" : "text-secondary/70"
+                  isActive("/sobre") ? "text-secondary font-semibold" : "text-secondary/70"
                 }`}
               >
-                Plataforma
+                Sobre
+              </Link>
+              <Link
+                to="/contato"
+                className={`text-sm font-medium transition-all hover:text-secondary ${
+                  isActive("/contato") ? "text-secondary font-semibold" : "text-secondary/70"
+                }`}
+              >
+                Contato
               </Link>
             </div>
 

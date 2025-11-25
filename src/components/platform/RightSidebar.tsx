@@ -31,24 +31,24 @@ const events = [
 
 export const RightSidebar = () => {
   return (
-    <aside className="w-80 min-h-screen p-6 space-y-6 sticky top-0 h-screen overflow-y-auto">
+    <aside className="w-80 min-h-[calc(100vh-4rem)] p-6 space-y-6 sticky top-16 overflow-y-auto">
       {/* Próximos Eventos */}
-      <div className="p-6 rounded-2xl bg-gradient-card backdrop-blur-xl border border-secondary/20 shadow-lg">
+      <div className="p-6 rounded-2xl bg-gradient-card backdrop-blur-xl border border-secondary/20 shadow-lg hover:shadow-glow-primary transition-all duration-300">
         <div className="flex items-center gap-2 mb-6">
-          <Calendar className="w-5 h-5 text-dark-fg" />
+          <Calendar className="w-5 h-5 text-secondary" />
           <h2 className="text-lg font-bold text-dark-fg">Próximos Eventos</h2>
         </div>
         
-        <div className="space-y-4">
+        <div className="space-y-3">
           {events.map((event) => (
             <div
               key={event.id}
-              className="p-4 rounded-xl bg-dark-bg/30 border border-secondary/10 hover:border-secondary/30 transition-all duration-300 group"
+              className="p-4 rounded-xl bg-dark-bg/40 border border-secondary/10 hover:border-secondary/30 hover:bg-dark-bg/50 transition-all duration-300 group"
             >
-              <div className="flex gap-4">
-                <div className="flex flex-col items-center justify-center w-14 h-14 rounded-lg bg-secondary/20 group-hover:bg-secondary/30 transition-colors">
-                  <span className="text-2xl font-bold text-dark-fg">{event.date}</span>
-                  <span className="text-xs text-dark-fg/60 uppercase">{event.month}</span>
+              <div className="flex gap-3">
+                <div className="flex flex-col items-center justify-center w-12 h-12 rounded-lg bg-gradient-beige/20 group-hover:bg-gradient-beige/30 transition-colors shadow-glow-secondary">
+                  <span className="text-xl font-bold text-dark-fg">{event.date}</span>
+                  <span className="text-[10px] text-dark-fg/60 uppercase font-semibold">{event.month}</span>
                 </div>
                 <div className="flex-1 min-w-0">
                   <h3 className="text-dark-fg font-semibold text-sm mb-1 line-clamp-2">
@@ -65,7 +65,8 @@ export const RightSidebar = () => {
               </div>
               <Button
                 size="sm"
-                className="w-full mt-3 bg-secondary/10 text-dark-fg hover:bg-secondary/20 border border-secondary/20"
+                variant="ghost"
+                className="w-full mt-3 text-dark-fg/70 hover:text-secondary hover:bg-secondary/10 border border-secondary/20 transition-all duration-300"
               >
                 Confirmar Presença
               </Button>
@@ -75,74 +76,98 @@ export const RightSidebar = () => {
       </div>
 
       {/* Seu Progresso */}
-      <div className="p-6 rounded-2xl bg-gradient-card backdrop-blur-xl border border-secondary/20 shadow-lg">
+      <div className="p-6 rounded-2xl bg-gradient-card backdrop-blur-xl border border-secondary/20 shadow-lg hover:shadow-glow-primary transition-all duration-300">
         <div className="flex items-center gap-2 mb-6">
-          <Trophy className="w-5 h-5 text-dark-fg" />
+          <Trophy className="w-5 h-5 text-secondary" />
           <h2 className="text-lg font-bold text-dark-fg">Seu Progresso</h2>
         </div>
 
-        {/* Nível */}
-        <div className="flex items-center justify-between mb-6">
+        {/* Nível com Glowing Progress Ring */}
+        <div className="flex items-center justify-between mb-8 p-4 rounded-xl bg-dark-bg/40">
           <div>
-            <p className="text-2xl font-bold text-dark-fg">Nível 7</p>
+            <p className="text-3xl font-bold text-dark-fg mb-1">Nível 7</p>
             <p className="text-sm text-dark-fg/60">Engajador Ativo</p>
           </div>
-          <div className="relative w-20 h-20">
-            <svg className="w-20 h-20 transform -rotate-90">
+          <div className="relative w-24 h-24">
+            {/* Background circle */}
+            <svg className="w-24 h-24 transform -rotate-90">
               <circle
-                cx="40"
-                cy="40"
-                r="34"
+                cx="48"
+                cy="48"
+                r="40"
                 stroke="currentColor"
-                strokeWidth="6"
+                strokeWidth="8"
                 fill="none"
-                className="text-secondary/20"
+                className="text-secondary/10"
               />
+              {/* Progress circle with glow */}
               <circle
-                cx="40"
-                cy="40"
-                r="34"
-                stroke="currentColor"
-                strokeWidth="6"
+                cx="48"
+                cy="48"
+                r="40"
+                stroke="url(#progressGradient)"
+                strokeWidth="8"
                 fill="none"
-                strokeDasharray={`${2 * Math.PI * 34}`}
-                strokeDashoffset={`${2 * Math.PI * 34 * (1 - 0.68)}`}
-                className="text-secondary transition-all duration-500"
-                style={{ filter: "drop-shadow(0 0 8px hsl(var(--secondary) / 0.4))" }}
+                strokeDasharray={`${2 * Math.PI * 40}`}
+                strokeDashoffset={`${2 * Math.PI * 40 * (1 - 0.68)}`}
+                strokeLinecap="round"
+                className="transition-all duration-1000"
+                style={{ 
+                  filter: "drop-shadow(0 0 12px hsl(var(--secondary) / 0.6)) drop-shadow(0 0 24px hsl(var(--secondary) / 0.3))",
+                }}
               />
+              <defs>
+                <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stopColor="hsl(var(--secondary))" />
+                  <stop offset="100%" stopColor="hsl(40 35% 82%)" />
+                </linearGradient>
+              </defs>
             </svg>
+            {/* Center text */}
             <div className="absolute inset-0 flex items-center justify-center">
-              <span className="text-lg font-bold text-dark-fg">68%</span>
+              <span className="text-2xl font-bold text-dark-fg">68%</span>
+            </div>
+            {/* Glow effect */}
+            <div className="absolute inset-0 flex items-center justify-center -z-10">
+              <div className="w-20 h-20 bg-secondary/20 rounded-full blur-xl"></div>
             </div>
           </div>
         </div>
 
         {/* Ritual Semanal */}
-        <div className="space-y-3">
+        <div className="space-y-3 p-4 rounded-xl bg-dark-bg/40">
           <div className="flex items-center gap-2">
-            <Zap className="w-4 h-4 text-dark-fg" />
+            <Zap className="w-4 h-4 text-secondary" />
             <p className="text-sm font-semibold text-dark-fg">Ritual Semanal</p>
           </div>
           <div className="space-y-2">
             <div className="flex justify-between text-xs text-dark-fg/60">
               <span>4 de 5 rituais completos</span>
-              <span>80%</span>
+              <span className="font-semibold text-secondary">80%</span>
             </div>
-            <Progress value={80} className="h-2 bg-secondary/20" />
+            <div className="relative h-2 w-full overflow-hidden rounded-full bg-secondary/10">
+              <div 
+                className="h-full bg-gradient-beige transition-all duration-500 rounded-full"
+                style={{ 
+                  width: '80%',
+                  boxShadow: '0 0 12px hsl(var(--secondary) / 0.5)'
+                }}
+              />
+            </div>
           </div>
         </div>
 
         {/* Conquistas Recentes */}
         <div className="mt-6 pt-6 border-t border-secondary/10">
-          <p className="text-sm font-semibold text-dark-fg mb-3">Conquistas Recentes</p>
-          <div className="flex gap-2">
-            <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center text-xl">
+          <p className="text-sm font-semibold text-dark-fg mb-4">Conquistas Recentes</p>
+          <div className="flex gap-3">
+            <div className="w-14 h-14 rounded-xl bg-gradient-beige/20 flex items-center justify-center text-2xl hover:scale-110 transition-transform duration-300 shadow-glow-secondary cursor-pointer">
               🎯
             </div>
-            <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center text-xl">
+            <div className="w-14 h-14 rounded-xl bg-gradient-beige/20 flex items-center justify-center text-2xl hover:scale-110 transition-transform duration-300 shadow-glow-secondary cursor-pointer">
               🚀
             </div>
-            <div className="w-12 h-12 rounded-lg bg-secondary/20 flex items-center justify-center text-xl">
+            <div className="w-14 h-14 rounded-xl bg-gradient-beige/20 flex items-center justify-center text-2xl hover:scale-110 transition-transform duration-300 shadow-glow-secondary cursor-pointer">
               💡
             </div>
           </div>

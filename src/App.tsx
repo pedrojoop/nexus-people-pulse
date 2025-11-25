@@ -10,6 +10,7 @@ import CulturaIA from "./pages/CulturaIA";
 import CultureService from "./pages/CultureService";
 import LMS from "./pages/LMS";
 import Gamification from "./pages/Gamification";
+import Configuracoes from "./pages/Configuracoes";
 import Problema from "./pages/Problema";
 import Servicos from "./pages/Servicos";
 import Sobre from "./pages/Sobre";
@@ -36,6 +37,7 @@ const App = () => (
           <Route path="/culture-service" element={<CultureService />} />
           <Route path="/lms" element={<LMS />} />
           <Route path="/gamification" element={<Gamification />} />
+          <Route path="/platform/config" element={<Configuracoes />} />
           <Route path="/platform/*" element={<Platform />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

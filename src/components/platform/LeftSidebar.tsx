@@ -9,7 +9,7 @@ const menuItems = [
   { icon: Trophy, label: "Gamificação", path: "/gamification" },
   { icon: Calendar, label: "Eventos", path: "/platform/eventos" },
   { icon: MessageCircle, label: "Chat", path: "/platform/chat" },
-  { icon: Users, label: "Time", path: "/platform/time" },
+  { icon: Users, label: "Pessoas", path: "/platform/pessoas" },
   { icon: FolderOpen, label: "Documentos", path: "/platform/documentos" },
   { icon: BookOpen, label: "Academia", path: "/platform/academia" },
   { icon: Settings, label: "Configurações", path: "/platform/config" },

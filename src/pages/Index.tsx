@@ -1,7 +1,7 @@
 import { Hero } from "@/components/Hero";
 import { Problem } from "@/components/Problem";
 import { Solution } from "@/components/Solution";
-import { Ethics } from "@/components/Ethics";
+import { Pricing } from "@/components/Pricing";
 import { SocialProof } from "@/components/SocialProof";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
@@ -12,7 +12,7 @@ const Index = () => {
       <Hero />
       <Problem />
       <Solution />
-      <Ethics />
+      <Pricing />
       <SocialProof />
       <FinalCTA />
       <Footer />

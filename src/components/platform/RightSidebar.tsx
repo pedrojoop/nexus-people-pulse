@@ -31,7 +31,7 @@ const events = [
 
 export const RightSidebar = () => {
   return (
-    <aside className="w-80 min-h-screen p-6 space-y-6 sticky top-0">
+    <aside className="w-80 min-h-screen p-6 space-y-6 sticky top-0 h-screen overflow-y-auto">
       {/* Próximos Eventos */}
       <div className="p-6 rounded-2xl bg-gradient-card backdrop-blur-xl border border-secondary/20 shadow-lg">
         <div className="flex items-center gap-2 mb-6">

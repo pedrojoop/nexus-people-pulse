@@ -5,27 +5,27 @@ import heroDashboard from "@/assets/hero-dashboard.png";
 export const Hero = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-hero pt-20 pb-32 px-6">
-      {/* Ambient glow effects */}
-      <div className="absolute top-0 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-3xl animate-glow-pulse" />
+      {/* Ambient glow effects - Nexus Spark */}
+      <div className="absolute top-0 left-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-glow-pulse" />
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-secondary/10 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '1s' }} />
       
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center max-w-4xl mx-auto mb-16 animate-fade-up">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-accent/50 backdrop-blur-sm border border-primary/20 mb-6">
-            <span className="w-2 h-2 rounded-full bg-primary animate-glow-pulse" />
-            <span className="text-sm font-medium text-primary">Nova Era: People & Culture 2.0</span>
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 backdrop-blur-sm border border-secondary/40 mb-6">
+            <span className="w-2 h-2 rounded-full bg-secondary animate-glow-pulse" />
+            <span className="text-sm font-medium text-secondary">Nova Era: People & Culture 2.0</span>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold text-foreground mb-6 leading-tight">
+          <h1 className="text-5xl md:text-7xl font-bold text-dark-fg mb-6 leading-tight">
             Transforme Cultura em{" "}
-            <span className="bg-gradient-primary bg-clip-text text-transparent">
+            <span className="bg-gradient-beige bg-clip-text text-transparent">
               Dados
             </span>
             .<br />
             Sem perder a Humanidade.
           </h1>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-10 leading-relaxed">
+          <p className="text-xl md:text-2xl text-secondary/80 mb-10 leading-relaxed">
             A primeira plataforma de Diagnóstico de Cultura e Engajamento desenhada para a era híbrida. 
             <br />
             Elimine a cegueira gerencial sem ser o 'Big Brother'.
@@ -34,7 +34,7 @@ export const Hero = () => {
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
               size="lg" 
-              className="bg-gradient-primary hover:shadow-glow-primary transition-all duration-300 text-lg px-8 py-6 group"
+              className="bg-secondary text-primary hover:bg-secondary/90 hover:shadow-glow-primary transition-all duration-300 text-lg px-8 py-6 group font-semibold"
             >
               Começar Diagnóstico Gratuito
               <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
@@ -43,7 +43,7 @@ export const Hero = () => {
             <Button 
               size="lg" 
               variant="outline" 
-              className="border-2 border-primary/20 hover:bg-accent hover:border-primary/40 text-lg px-8 py-6 group"
+              className="border-2 border-secondary/40 text-secondary hover:bg-secondary/10 hover:border-secondary/60 text-lg px-8 py-6 group"
             >
               <Play className="mr-2 group-hover:scale-110 transition-transform" size={20} />
               Ver a Demo Interativa
@@ -54,10 +54,10 @@ export const Hero = () => {
         {/* Dashboard Preview */}
         <div className="animate-scale-in" style={{ animationDelay: '0.2s' }}>
           <div className="relative max-w-6xl mx-auto">
-            {/* Glow effect behind dashboard */}
-            <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-3xl rounded-3xl" />
+            {/* Glow effect behind dashboard - Nexus Spark */}
+            <div className="absolute inset-0 bg-secondary/20 blur-3xl rounded-3xl" />
             
-            <div className="relative rounded-2xl overflow-hidden border border-border/50 shadow-2xl backdrop-blur-sm bg-card/50 animate-float">
+            <div className="relative rounded-2xl overflow-hidden border border-secondary/30 shadow-2xl backdrop-blur-sm bg-primary/30 animate-float">
               <img 
                 src={heroDashboard} 
                 alt="Nexus Dashboard - Team Pulse Analytics" 

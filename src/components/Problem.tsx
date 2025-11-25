@@ -6,9 +6,9 @@ export const Problem = () => {
     <section className="py-24 px-6 bg-background">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-up">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             Você sabe quem está à beira do{" "}
-            <span className="text-secondary">burnout</span> hoje?
+            <span className="text-destructive">burnout</span> hoje?
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
             A gestão remota criou pontos cegos que nenhum dashboard de produtividade consegue revelar.
@@ -59,12 +59,12 @@ export const Problem = () => {
           </Card>
 
           {/* New Reality */}
-          <Card className="p-8 border-2 border-primary/30 bg-gradient-card hover:shadow-glow-primary transition-all animate-fade-up" style={{ animationDelay: '0.1s' }}>
+          <Card className="p-8 border-2 border-primary/30 bg-gradient-to-br from-primary/5 to-secondary/5 hover:shadow-lg transition-all animate-fade-up" style={{ animationDelay: '0.1s' }}>
             <div className="flex items-center gap-3 mb-6">
-              <div className="w-12 h-12 rounded-xl bg-primary/10 flex items-center justify-center">
-                <div className="w-3 h-3 rounded-full bg-primary animate-glow-pulse" />
+              <div className="w-12 h-12 rounded-xl bg-secondary/20 flex items-center justify-center">
+                <div className="w-3 h-3 rounded-full bg-secondary animate-glow-pulse" />
               </div>
-              <h3 className="text-2xl font-bold text-foreground">A Realidade</h3>
+              <h3 className="text-2xl font-bold text-primary">A Realidade</h3>
             </div>
             
             <div className="space-y-4">
@@ -90,7 +90,7 @@ export const Problem = () => {
               </div>
             </div>
             
-            <div className="mt-6 p-4 rounded-lg bg-primary/5 border border-primary/20">
+            <div className="mt-6 p-4 rounded-lg bg-secondary/10 border border-secondary/30">
               <p className="text-sm font-medium text-primary">
                 Solução: Cultura mensurável e acionável
               </p>

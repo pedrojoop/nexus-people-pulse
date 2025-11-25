@@ -55,6 +55,13 @@ export default {
         'gradient-primary': 'var(--gradient-primary)',
         'gradient-hero': 'var(--gradient-hero)',
         'gradient-card': 'var(--gradient-card)',
+        'gradient-beige': 'var(--gradient-beige)',
+      },
+      backgroundColor: {
+        'dark-bg': 'hsl(var(--dark-bg))',
+      },
+      textColor: {
+        'dark-fg': 'hsl(var(--dark-fg))',
       },
       boxShadow: {
         'glow-primary': 'var(--glow-primary)',

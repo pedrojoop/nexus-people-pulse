@@ -6,14 +6,14 @@ export const Ethics = () => {
   return (
     <section className="py-24 px-6 bg-background relative overflow-hidden">
       {/* Ambient background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-secondary/5" />
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary/5 via-transparent to-primary/5" />
       
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           {/* Visual */}
           <div className="animate-fade-up order-2 md:order-1">
             <div className="relative">
-              <div className="absolute inset-0 bg-gradient-primary opacity-20 blur-3xl rounded-full" />
+              <div className="absolute inset-0 bg-secondary/20 blur-3xl rounded-full" />
               <img 
                 src={ethicsShield} 
                 alt="Ethics Shield - Trust and Data Protection" 
@@ -25,14 +25,14 @@ export const Ethics = () => {
           {/* Content */}
           <div className="space-y-8 animate-fade-up order-1 md:order-2" style={{ animationDelay: '0.1s' }}>
             <div>
-              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4">
+              <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 border border-secondary/40 mb-4">
                 <Shield className="text-primary" size={16} />
                 <span className="text-sm font-semibold text-primary">Nosso Diferencial</span>
               </div>
               
-              <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+              <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
                 Anti-Big Brother{" "}
-                <span className="text-primary">por Design</span>
+                <span className="text-secondary">por Design</span>
               </h2>
               
               <p className="text-xl text-muted-foreground leading-relaxed">
@@ -84,10 +84,10 @@ export const Ethics = () => {
               </Card>
             </div>
 
-            <div className="p-6 rounded-xl bg-gradient-card border-2 border-primary/30">
-              <p className="text-base font-semibold text-foreground text-center leading-relaxed">
+            <div className="p-6 rounded-xl bg-gradient-to-br from-secondary/10 to-primary/5 border-2 border-secondary/30">
+              <p className="text-base font-semibold text-primary text-center leading-relaxed">
                 "Ferramentas de vigilância destroem cultura. <br />
-                Nós construímos ferramentas de <span className="text-primary">consciência coletiva</span>."
+                Nós construímos ferramentas de <span className="text-secondary">consciência coletiva</span>."
               </p>
             </div>
           </div>

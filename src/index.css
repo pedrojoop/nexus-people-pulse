@@ -8,46 +8,52 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
+    /* Light sections - for mental clarity */
     --background: 0 0% 100%;
-    --foreground: 230 15% 15%;
+    --foreground: 150 17% 20%;
 
     --card: 0 0% 100%;
-    --card-foreground: 230 15% 15%;
+    --card-foreground: 150 17% 20%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 230 15% 15%;
+    --popover-foreground: 150 17% 20%;
 
-    /* Deep indigo - trustworthy, tech-forward */
-    --primary: 245 60% 45%;
-    --primary-foreground: 0 0% 100%;
+    /* Brand colors - Primary Green #2A3C30 */
+    --primary: 150 17% 20%;
+    --primary-foreground: 40 30% 77%;
     
-    /* Warm coral - human touch */
-    --secondary: 15 85% 62%;
-    --secondary-foreground: 0 0% 100%;
+    /* Brand colors - Light Beige #D1C7B4 for highlights and CTAs */
+    --secondary: 40 30% 77%;
+    --secondary-foreground: 150 17% 20%;
 
-    --muted: 230 15% 96%;
-    --muted-foreground: 230 10% 50%;
+    --muted: 0 0% 96%;
+    --muted-foreground: 150 10% 40%;
 
-    --accent: 245 50% 92%;
-    --accent-foreground: 245 60% 45%;
+    --accent: 40 25% 90%;
+    --accent-foreground: 150 17% 20%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 230 15% 90%;
-    --input: 230 15% 90%;
-    --ring: 245 60% 45%;
+    --border: 150 10% 85%;
+    --input: 150 10% 85%;
+    --ring: 150 17% 20%;
 
     --radius: 0.75rem;
 
-    /* Gradients for depth */
-    --gradient-primary: linear-gradient(135deg, hsl(245 60% 45%), hsl(260 55% 55%));
-    --gradient-hero: linear-gradient(180deg, hsl(0 0% 100%), hsl(245 50% 98%));
-    --gradient-card: linear-gradient(135deg, hsl(0 0% 100% / 0.95), hsl(245 40% 98% / 0.95));
+    /* Dark background for hero and key sections */
+    --dark-bg: 150 17% 20%;
+    --dark-fg: 40 30% 77%;
+
+    /* Gradients with brand colors */
+    --gradient-primary: linear-gradient(135deg, hsl(150 17% 20%), hsl(150 20% 25%));
+    --gradient-hero: linear-gradient(180deg, hsl(150 17% 18%), hsl(150 17% 22%));
+    --gradient-card: linear-gradient(135deg, hsl(150 20% 22% / 0.5), hsl(150 15% 25% / 0.5));
+    --gradient-beige: linear-gradient(135deg, hsl(40 30% 77%), hsl(40 35% 82%));
     
-    /* Glow effects for the "Nexus Spark" */
-    --glow-primary: 0 0 40px hsl(245 60% 45% / 0.3);
-    --glow-secondary: 0 0 30px hsl(15 85% 62% / 0.25);
+    /* Glow effects with beige "Nexus Spark" */
+    --glow-primary: 0 0 40px hsl(40 30% 77% / 0.2);
+    --glow-secondary: 0 0 30px hsl(40 35% 70% / 0.25);
 
     /* Smooth transitions */
     --transition-smooth: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);

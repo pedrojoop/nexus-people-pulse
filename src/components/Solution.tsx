@@ -6,12 +6,12 @@ export const Solution = () => {
     <section className="py-24 px-6 bg-muted/30">
       <div className="container mx-auto max-w-7xl">
         <div className="text-center mb-16 animate-fade-up">
-          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-4">
+          <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-secondary/20 border border-secondary/40 mb-4">
             <Zap className="text-primary" size={16} />
             <span className="text-sm font-semibold text-primary">A Arquitetura Nexus</span>
           </div>
           
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
+          <h2 className="text-4xl md:text-5xl font-bold text-primary mb-4">
             O Cérebro e os Sensores do Nexus
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -88,30 +88,30 @@ export const Solution = () => {
               </div>
             </div>
 
-            <Card className="p-8 border-2 border-primary/30 bg-gradient-card hover:shadow-glow-primary transition-all">
+            <Card className="p-8 border-2 border-primary/30 bg-gradient-to-br from-primary/5 to-secondary/5 hover:shadow-lg transition-all">
               <div className="space-y-6">
                 <div className="flex items-start gap-4">
                   <TrendingUp className="text-primary flex-shrink-0 mt-1" size={24} />
                   <div>
-                    <h4 className="text-lg font-bold text-foreground mb-2">Análise Preditiva</h4>
+                    <h4 className="text-lg font-bold text-primary mb-2">Análise Preditiva</h4>
                     <p className="text-sm text-muted-foreground leading-relaxed">
                       Detecta padrões de fadiga, sobrecarga e desengajamento antes que virem estatísticas de turnover.
                     </p>
                   </div>
                 </div>
 
-                <div className="p-5 rounded-xl bg-background border-2 border-primary/20">
+                <div className="p-5 rounded-xl bg-background border-2 border-secondary/30">
                   <div className="flex items-start gap-3 mb-3">
                     <div className="w-2 h-2 rounded-full bg-secondary mt-2 animate-glow-pulse" />
                     <div>
-                      <p className="font-semibold text-foreground text-sm mb-1">Alerta Inteligente</p>
+                      <p className="font-semibold text-primary text-sm mb-1">Alerta Inteligente</p>
                       <p className="text-xs text-muted-foreground">Detectado há 2 horas</p>
                     </div>
                   </div>
-                  <p className="text-sm text-foreground leading-relaxed mb-3">
+                  <p className="text-sm text-primary leading-relaxed mb-3">
                     "O time de Design apresenta risco de sobrecarga. Engajamento em queda de 23% nas últimas 2 semanas."
                   </p>
-                  <div className="flex items-center gap-2 p-3 rounded-lg bg-primary/5 border border-primary/20">
+                  <div className="flex items-center gap-2 p-3 rounded-lg bg-secondary/10 border border-secondary/30">
                     <Zap className="text-primary flex-shrink-0" size={16} />
                     <p className="text-xs font-medium text-primary">
                       Sugestão: Rever rituais de sexta-feira e redistribuir demandas de Q1
@@ -119,7 +119,7 @@ export const Solution = () => {
                   </div>
                 </div>
 
-                <div className="p-4 rounded-lg bg-primary/5 border border-primary/20">
+                <div className="p-4 rounded-lg bg-secondary/10 border border-secondary/30">
                   <p className="text-sm font-medium text-primary text-center">
                     Insights acionáveis, não apenas números bonitos
                   </p>

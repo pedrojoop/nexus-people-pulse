@@ -32,24 +32,24 @@ export const SocialProof = () => {
         </div>
 
         {/* Testimonial */}
-        <Card className="max-w-4xl mx-auto p-10 border-2 border-primary/20 bg-gradient-card hover:shadow-glow-primary transition-all animate-fade-up" style={{ animationDelay: '0.1s' }}>
+        <Card className="max-w-4xl mx-auto p-10 border-2 border-primary/20 bg-gradient-to-br from-secondary/5 to-background hover:shadow-lg transition-all animate-fade-up" style={{ animationDelay: '0.1s' }}>
           <div className="flex items-start gap-6">
-            <div className="w-16 h-16 rounded-2xl bg-primary/10 flex items-center justify-center flex-shrink-0">
+            <div className="w-16 h-16 rounded-2xl bg-secondary/20 flex items-center justify-center flex-shrink-0">
               <Quote className="text-primary" size={32} />
             </div>
             
             <div className="space-y-4">
-              <p className="text-xl md:text-2xl text-foreground leading-relaxed font-medium">
+              <p className="text-xl md:text-2xl text-primary leading-relaxed font-medium">
                 "Finalmente dados que eu posso levar para a diretoria, sem parecer que estou vigiando meu time. 
                 O Nexus nos ajudou a identificar burnout silencioso em 3 squads antes que virasse turnover."
               </p>
               
               <div className="flex items-center gap-4 pt-4 border-t border-border">
-                <div className="w-14 h-14 rounded-full bg-gradient-primary flex items-center justify-center text-white font-bold text-xl">
+                <div className="w-14 h-14 rounded-full bg-gradient-primary flex items-center justify-center text-secondary font-bold text-xl">
                   MC
                 </div>
                 <div>
-                  <p className="font-bold text-foreground text-lg">Maria Clara Santos</p>
+                  <p className="font-bold text-primary text-lg">Maria Clara Santos</p>
                   <p className="text-muted-foreground">Head of People & Culture</p>
                   <p className="text-sm text-primary font-semibold">TechCorp — 350+ colaboradores</p>
                 </div>
@@ -66,7 +66,7 @@ export const SocialProof = () => {
           </div>
           
           <div className="text-center animate-fade-up" style={{ animationDelay: '0.3s' }}>
-            <div className="text-4xl md:text-5xl font-bold text-secondary mb-2">2.4x</div>
+            <div className="text-4xl md:text-5xl font-bold text-primary mb-2">2.4x</div>
             <p className="text-muted-foreground">Aumento em engajamento mensurado</p>
           </div>
           

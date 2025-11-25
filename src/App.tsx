@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Platform from "./pages/Platform";
 import Dashboard from "./pages/Dashboard";
 import CulturaIA from "./pages/CulturaIA";
+import CultureService from "./pages/CultureService";
 import Problema from "./pages/Problema";
 import Servicos from "./pages/Servicos";
 import Sobre from "./pages/Sobre";
@@ -30,6 +31,7 @@ const App = () => (
           <Route path="/platform" element={<Platform />} />
           <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/cultura-ia" element={<CulturaIA />} />
+          <Route path="/culture-service" element={<CultureService />} />
           <Route path="/platform/*" element={<Platform />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />

@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button";
 import { Calendar, ArrowRight } from "lucide-react";
+import { Link } from "react-router-dom";
 
 export const FinalCTA = () => {
   return (
@@ -28,10 +29,13 @@ export const FinalCTA = () => {
           <Button 
             size="lg" 
             className="bg-secondary text-primary hover:bg-secondary/90 hover:shadow-glow-primary transition-all duration-300 text-lg px-10 py-7 group font-semibold"
+            asChild
           >
-            <Calendar className="mr-2 group-hover:scale-110 transition-transform" />
-            Agendar Demo Founder-Led
-            <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            <Link to="/platform">
+              <Calendar className="mr-2 group-hover:scale-110 transition-transform" />
+              Agendar Demo Founder-Led
+              <ArrowRight className="ml-2 group-hover:translate-x-1 transition-transform" />
+            </Link>
           </Button>
         </div>
 

@@ -2,7 +2,6 @@ import { Hero } from "@/components/Hero";
 import { Problem } from "@/components/Problem";
 import { Solution } from "@/components/Solution";
 import { Pricing } from "@/components/Pricing";
-import { SocialProof } from "@/components/SocialProof";
 import { FinalCTA } from "@/components/FinalCTA";
 import { Footer } from "@/components/Footer";
 
@@ -13,7 +12,6 @@ const Index = () => {
       <Problem />
       <Solution />
       <Pricing />
-      <SocialProof />
       <FinalCTA />
       <Footer />
     </div>

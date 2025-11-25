@@ -54,12 +54,14 @@ export const NavBar = () => {
               >
                 Problema
               </Link>
-              <button
-                onClick={() => scrollToSection("solution")}
-                className="text-sm font-medium text-secondary/70 hover:text-secondary transition-all"
+              <Link
+                to="/servicos"
+                className={`text-sm font-medium transition-all hover:text-secondary ${
+                  isActive("/servicos") ? "text-secondary font-semibold" : "text-secondary/70"
+                }`}
               >
                 Serviços
-              </button>
+              </Link>
               <button
                 onClick={() => scrollToSection("pricing")}
                 className="text-sm font-medium text-secondary/70 hover:text-secondary transition-all"

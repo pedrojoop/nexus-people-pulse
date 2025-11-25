@@ -11,7 +11,6 @@ const menuItems = [
   { icon: MessageCircle, label: "Chat", path: "/platform/chat" },
   { icon: Users, label: "Time", path: "/platform/time" },
   { icon: BookOpen, label: "Academia", path: "/platform/academia" },
-  { icon: BarChart3, label: "Insights", path: "/platform/insights" },
   { icon: Settings, label: "Configurações", path: "/platform/config" },
 ];
 

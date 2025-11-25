@@ -36,8 +36,8 @@ const posts = [
 
 export const MainFeed = () => {
   return (
-    <main className="flex-1 min-h-screen p-8 max-w-3xl">
-      <div className="space-y-6">
+    <main className="flex-1 min-h-screen p-8">
+      <div className="space-y-6 max-w-3xl mx-auto">
         {/* Post Creation Card */}
         <div className="p-6 rounded-2xl bg-gradient-card backdrop-blur-xl border border-secondary/20 shadow-lg">
           <div className="flex items-start gap-4">

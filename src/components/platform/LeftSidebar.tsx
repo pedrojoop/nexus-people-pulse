@@ -13,7 +13,7 @@ const menuItems = [
 
 export const LeftSidebar = () => {
   return (
-    <aside className="w-64 min-h-screen border-r border-border/10 p-6 sticky top-0">
+    <aside className="w-64 min-h-screen border-r border-border/10 p-6 sticky top-0 h-screen overflow-y-auto">
       <div className="mb-8">
         <h1 className="text-2xl font-bold text-dark-fg">Nexus</h1>
         <p className="text-sm text-dark-fg/60 mt-1">People & Culture</p>

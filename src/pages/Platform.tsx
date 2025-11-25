@@ -4,8 +4,8 @@ import { RightSidebar } from "@/components/platform/RightSidebar";
 
 const Platform = () => {
   return (
-    <div className="min-h-screen bg-dark-bg">
-      <div className="flex max-w-[1920px] mx-auto">
+    <div className="min-h-screen bg-dark-bg flex justify-center">
+      <div className="flex w-full max-w-[1600px]">
         <LeftSidebar />
         <MainFeed />
         <RightSidebar />

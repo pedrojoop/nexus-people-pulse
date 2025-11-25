@@ -1,10 +1,11 @@
-import { Home, Calendar, MessageCircle, Users, BookOpen, BarChart3, Settings, Sparkles, Heart } from "lucide-react";
+import { Home, Calendar, MessageCircle, Users, BookOpen, BarChart3, Settings, Sparkles, Heart, GraduationCap } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 
 const menuItems = [
   { icon: Home, label: "Feed", path: "/platform" },
   { icon: Sparkles, label: "IA de Cultura", path: "/cultura-ia" },
   { icon: Heart, label: "Culture-as-a-Service", path: "/culture-service" },
+  { icon: GraduationCap, label: "Treinamentos (LMS)", path: "/lms", category: "RH" },
   { icon: Calendar, label: "Eventos", path: "/platform/eventos" },
   { icon: MessageCircle, label: "Chat", path: "/platform/chat" },
   { icon: Users, label: "Time", path: "/platform/time" },

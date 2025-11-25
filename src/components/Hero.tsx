@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Play } from "lucide-react";
 import { Link } from "react-router-dom";
-import chaosToClarity from "@/assets/chaos-to-clarity.png";
+import nexusWaveChart from "@/assets/nexus-wave-chart.png";
 
 export const Hero = () => {
   return (
@@ -68,8 +68,8 @@ export const Hero = () => {
               <div className="absolute inset-0 bg-secondary/10 blur-3xl" />
               
               <img 
-                src={chaosToClarity} 
-                alt="From Chaos to Clarity - Nexus transforms disconnected signals into actionable team health insights" 
+                src={nexusWaveChart} 
+                alt="The Nexus Wave - transforming noisy data into clear team health insights" 
                 className="w-full h-auto relative z-10 animate-float"
               />
             </div>

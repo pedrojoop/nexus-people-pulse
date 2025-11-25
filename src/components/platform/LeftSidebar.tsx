@@ -1,4 +1,4 @@
-import { Home, Calendar, MessageCircle, Users, BookOpen, BarChart3, Settings, Sparkles, Heart, GraduationCap, Trophy } from "lucide-react";
+import { Home, Calendar, MessageCircle, Users, BookOpen, BarChart3, Settings, Sparkles, Heart, GraduationCap, Trophy, FolderOpen } from "lucide-react";
 import { NavLink } from "@/components/NavLink";
 
 const menuItems = [
@@ -10,6 +10,7 @@ const menuItems = [
   { icon: Calendar, label: "Eventos", path: "/platform/eventos" },
   { icon: MessageCircle, label: "Chat", path: "/platform/chat" },
   { icon: Users, label: "Time", path: "/platform/time" },
+  { icon: FolderOpen, label: "Documentos", path: "/platform/documentos" },
   { icon: BookOpen, label: "Academia", path: "/platform/academia" },
   { icon: Settings, label: "Configurações", path: "/platform/config" },
 ];

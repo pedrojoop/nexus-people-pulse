@@ -3,6 +3,7 @@ import { NavLink } from "@/components/NavLink";
 
 const menuItems = [
   { icon: Home, label: "Feed", path: "/platform" },
+  { icon: BarChart3, label: "Analytics", path: "/platform/analytics" },
   { icon: Sparkles, label: "IA de Cultura", path: "/cultura-ia" },
   { icon: Heart, label: "Culture-as-a-Service", path: "/culture-service" },
   { icon: GraduationCap, label: "Treinamentos (LMS)", path: "/lms", category: "RH" },

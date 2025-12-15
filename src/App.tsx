@@ -16,6 +16,7 @@ import Chat from "./pages/Chat";
 import Eventos from "./pages/Eventos";
 import Documentos from "./pages/Documentos";
 import Pessoas from "./pages/Pessoas";
+import Analytics from "./pages/Analytics";
 import Problema from "./pages/Problema";
 import Servicos from "./pages/Servicos";
 import Sobre from "./pages/Sobre";
@@ -48,6 +49,7 @@ const App = () => (
             <Route path="/platform/eventos" element={<Eventos />} />
             <Route path="/platform/documentos" element={<Documentos />} />
             <Route path="/platform/pessoas" element={<Pessoas />} />
+            <Route path="/platform/analytics" element={<Analytics />} />
           <Route path="/platform/*" element={<Platform />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
